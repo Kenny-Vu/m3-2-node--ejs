@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 2</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<%- include('../partials/head') %>
 <body>
-  <header>
-    <h1>Node: Workshop 2</h1>
-  </header>
+  <%- include('../partials/header') %> 
   <div class="main">
     <h2>Part 1</h2>
     <div class="content">
@@ -14,7 +8,17 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <img src=<%-homer.imageUrl %> alt= <%- homer.name%>>
+        <p><%- homer.name%></p>
+        <p><%- homer.job %></p>
+        <p><%- homer.profession%></p>
+        <p><%- homer.favoriteFood %></p>
+        <p><%- homer.favoriteBeverage%></p>
       </div>
     </div>
+    <footer>
+      <a href="question2">Previous</a>
+      <a href="question4">Next</a>
+    </footer>
   </div>
 </body>
